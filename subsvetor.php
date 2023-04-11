@@ -1,7 +1,5 @@
 <?php
-//$X[10] = array(fgets(STDIN));
-
-$X = array(0, -5, 63, 0, 5, 2, -5, 8, 0, 10);
+$X = array(fgets(STDIN));
 
 for($i = 0; $i < count($X); $i++)
 {
