@@ -1,13 +1,16 @@
 <?php
-//$X = array(fgets(STDIN));
-$X = array(10, 2, 3, 50, 10, 65, 68, 54);
-$X[0] = 1;
-for($i = 0; $i > count($X); $i++)
+$X = array();
+
+for ($i = 0; $i < 100; $i++) 
 {
-    $X[$i] = 2*$X[1];
+    $X[$i] = intval(readline());
+    $X[$i] = number_format($X[$i], 1, ".", "");
 }
 
-echo "X[0] = ". $X[0];
-echo "X[1] = ". $X[1];
-echo "X[2] = ". $X[2];
-?>
+for ($i = 0; $i < 100; $i++) 
+{
+    if($X[$i] <= 10)
+    {
+        echo "A[$i] = " . $X[$i] . "\n";
+    }
+}
